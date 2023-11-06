@@ -1,10 +1,10 @@
 pipeline {
   agent any
   triggers {
-    gitHubPush
+    gitHubPush()
   }
 stages {
-  stage("checkout") {
+  stage('Checkout') {
     steps {
       checkout scm
     }
